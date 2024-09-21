@@ -241,6 +241,14 @@ h2 {
     float: left;
 }
 
+.elemento_eliminar--btn ion-icon{
+    color: #e27c79;
+}
+
+.elemento_eliminar--btn ion-icon:hover{
+    color:#ff0901;
+}
+
 .elemento_eliminar--btn {
     font-size: 22px;
     background: none;
@@ -251,6 +259,8 @@ h2 {
     line-height: 1;
     display: none;
 }
+
+
 
 .elemento_eliminar--btn:focus { outline: none; }
 .elemento_eliminar--btn:active { transform: translateY(2px); }

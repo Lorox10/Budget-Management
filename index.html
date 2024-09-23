@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Presupuesto</title>
     <link href="css/estilos.css" rel='stylesheet' />
+    <link rel="icon" href="css/money.png" type="image/png">
+
 </head>
 
 <body onload="cargarApp()">
     <div class="cabecero">
         <div Class="presupuesto">
             <div Class="presupuesto_titulo">
-                Presupuesto Disponible
+                -- Presupuesto Disponible --
             </div>
             <div class="presupuesto_valor" id='presupuesto'>+2,000.00 </div>
             <div class="presupuesto_ingreso limpiarEstilos">
@@ -31,6 +33,25 @@
             </div>
         </div>
     </div>
+
+    <form id="forma" onsubmit="return false;">
+        <div class="agregar">
+            <div class="agregar_contenedor">
+                <select class="agregar_tipo" name="tipo">
+                    <option value="ingreso" selected>Ingreso</option>
+                    <option value="egreso">Egreso</option>
+                </select>
+                <input type="text" class="agregar_descripcion" name="descripcion"
+                       placeholder="Agregar Descripción" id="descripcion"/>
+                <input type="number" class="agregar_valor" name="valor"
+                       placeholder="Valor" id="valor" step="any"/>
+                <button class="agregar_btn" onclick="agregarDato()">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </form>
+    
 
     <div class="contenedor limpiarEstilos">
         <div class="ingreso">

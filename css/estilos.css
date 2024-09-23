@@ -12,11 +12,12 @@
 
 body {
     color: #555;
-    font-family: Open Sans;
+    font-family:'Times New Roman', Times, serif;
     font-size: 16px;
     position: relative;
     height: 100vh;
     font-weight: 400;
+    background-color: #dcddddbe;
 }
 
 .derecha { float: right; }
@@ -71,18 +72,18 @@ body {
 
 .presupuesto_ingreso {
     margin-bottom: 10px;
-    background-color: #28B9B5;
+    background-color: #28b9b4;
 }
 
 .presupuesto_egreso {
-    background-color: #FF5049;
+    background-color: #ff4f49;
 }
 
 .presupuesto_ingreso--texto,
 .presupuesto_egreso--texto {
     float: left;
     font-size: 13px;
-    color: #fff;
+    color: #ffffff;
     margin-top: 2px;
 }
 
@@ -111,12 +112,16 @@ body {
 .agregar {
     padding: 14px;
     border-bottom: 1px solid #e7e7e7;
-    background-color: #f7f7f7;
+    background-color: #ffffffa6;
+    border-radius: 50px;
 }
 
 .agregar_contenedor {
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .agregar_tipo {
@@ -175,6 +180,8 @@ body {
     margin: 60px auto;
 }
 
+
+
 .ingreso {
     float: left;
     width: 370px;
@@ -198,11 +205,11 @@ h2 {
 
 .elemento {
     padding: 13px;
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid #928c8c;
 }
 
-.elemento:first-child { border-top: 1px solid #e7e7e7; }
-.elemento:nth-child(even) { background-color: #f7f7f7; }
+.elemento:first-child { border-top: 1px solid #8b8181; }
+.elemento:nth-child(even) { background-color: #ffffffb9; }
 
 .elemento_descripcion {
     float: left;
@@ -218,7 +225,7 @@ h2 {
     margin-left: 20px;
     transition: transform 0.3s;
     font-size: 11px;
-    background-color: #FFDAD9;
+    background-color: #fc4f4923;
     padding: 3px;
     border-radius: 3px;
     width: 45px;
@@ -268,3 +275,27 @@ h2 {
 .elemento:hover .elemento_eliminar--btn { display: block; }
 .elemento:hover .elemento_valor { transform: translateX(-20px); }
 .elemento:hover .elemento_porcentaje { transform: translateX(-20px); }
+
+#forma {
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.agregar_tipo, .agregar_descripcion {
+    font-size: 18px; 
+    padding: 10px; 
+    border: 1px solid #4d494956;
+    border-radius: 5px; 
+}
+
+.agregar_tipo {
+    width: 30%; 
+}
+
+.agregar_btn ion-icon:hover{
+    color:#13d81d;
+}
+
+
